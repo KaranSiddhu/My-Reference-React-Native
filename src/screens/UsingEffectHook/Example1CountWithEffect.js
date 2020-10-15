@@ -4,10 +4,13 @@ import {Text, TouchableOpacity, View, StyleSheet} from 'react-native';
 const Example1CountWithEffect = () => {
     const [count, setCount] = useState(0);
     const [data, setData] = useState('I will change when count is 4');    
+    
     useEffect(() => {
         if(count === 4)
             setData('I know that count is 4');
     })
+
+    
 
     return (
         <View style= {styles.container}>

@@ -16,6 +16,11 @@ import StylesScreen from './src/screens/StylesScreen';
 import EffectsHook from './src/screens/UsingEffectHook/EffectsHook';
 import Example1CountWithEffect from './src/screens/UsingEffectHook/Example1CountWithEffect';
 import Example2 from './src/screens/UsingEffectHook/Example2';
+import ReactNavigation from './src/screens/UsingReactNavigation/ReactNavigation';
+import StackNavigation from './src/screens/UsingReactNavigation/StackNavigation';
+import DrawerNavigation from './src/screens/UsingReactNavigation/DrawerNavigation';
+import BottomTabNavigation from './src/screens/UsingReactNavigation/BottomTabNavigation';
+import DetailsScreen from './src/screens/UsingReactNavigation/DetailsScreen';
 
 
 const navigator = createStackNavigator(
@@ -35,12 +40,16 @@ const navigator = createStackNavigator(
     effectsScreen: EffectsHook,
     Ex1Screen: Example1CountWithEffect,
     Ex2Screen: Example2,
-  
+    NavigationScreen:ReactNavigation,
+    StackScreen: StackNavigation,
+    BottomScreen: BottomTabNavigation,
+    DrawerScreen: DrawerNavigation,
+    DetailsScreen: DetailsScreen
   },
   {
     initialRouteName: "Home",
     defaultNavigationOptions: {
-      title: "App"
+      title: "Reference App"
     }
   }
 );

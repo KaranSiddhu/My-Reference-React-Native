@@ -94,7 +94,14 @@ const HomeScreen = ({navigation}) => {
 
                 </TouchableOpacity>
 
-               
+                <TouchableOpacity
+                    style= {styles.opacityStyle}
+                    onPress= {() => navigation.navigate('NavigationScreen')}
+                >
+                  
+                    <Text>React Navigation</Text>
+     
+                </TouchableOpacity>
 
             </View>
         </ScrollView>
